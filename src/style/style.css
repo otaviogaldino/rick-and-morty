@@ -1,0 +1,82 @@
+@import url(./global.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 30px;
+  background: linear-gradient(
+    147deg,
+    rgba(0, 255, 159, 1) 28%,
+    rgba(44, 0, 62, 1) 74%
+  );
+}
+
+.card {
+  width: 350px;
+  height: 550px;
+  padding: 0px 25px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px var(--roxo-galactico);
+  background-color: var(--azul-rick);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(0.5deg);
+  box-shadow: 0 0 15px 5px var(--roxo-galactico);
+}
+
+.card-content > h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--roxo-galactico);
+  margin-bottom: 20px;
+}
+
+.card-content > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px var(--roxo-galactico);
+}
+
+.card-content > p > span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-card {
+  background-color: var(--amarelo-morty);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-card > p {
+  color: var(--roxo-galactico);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-card:hover {
+  box-shadow: 0 0 15px 5px var(--roxo-galactico);
+  transform: scale(1.1);
+}

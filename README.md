@@ -1,0 +1,21 @@
+# Projeto Front-end - Rick and Morty API
+
+Projeto simples desenvolvido com HTML, CSS e JavaScript para consumir a API do Rick and Morty (https://rickandmortyapi.com/api/character).  
+O projeto exibe personagens com dados reais da API.
+
+## Funcionalidades
+
+- Listagem de personagens da série Rick and Morty.
+- Consumo da API oficial para buscar dados dinâmicos.
+
+## Status
+
+Projeto em desenvolvimento.  
+Ainda não possui responsividade.
+
+## Como usar
+
+1. Clone este repositório:
+```bash
+git clone [URL_DO_REPOSITORIO]
+2. Abra o arquivo index.html no seu navegador.
