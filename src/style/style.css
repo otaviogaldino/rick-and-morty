@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   gap: 30px;
+  padding: 10px;
   background: linear-gradient(
     147deg,
     rgba(0, 255, 159, 1) 28%,
@@ -16,7 +17,7 @@ body {
 }
 
 .card {
-  width: 350px;
+  width: 335px;
   height: 550px;
   padding: 0px 25px;
   border-radius: 25px;
@@ -42,7 +43,7 @@ body {
 }
 
 .card-content > img {
-  width: 300px;
+  width: 289px;
   height: 300px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -79,4 +80,51 @@ body {
 .btn-card:hover {
   box-shadow: 0 0 15px 5px var(--roxo-galactico);
   transform: scale(1.1);
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    height: auto;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+
+  .card-content > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card:active {
+    transform: scale(1.01) rotate(0.1deg);
+    box-shadow: 0 0 2px 2px var(--roxo-galactico);
+  }
+
+  .card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn-card {
+    width: 80%;
+    height: 45px;
+  }
+
+  .btn-card:hover {
+    box-shadow: 0 0 15px 2px var(--roxo-galactico);
+    transform: scale(1.1);
+  }
 }

@@ -10,6 +10,9 @@ fetch('https://rickandmortyapi.com/api/character')
         foto.src = data.results[0].image
         origem.innerText = data.results[0].origin.name
     })
+    .catch((err) => {
+        alert('ocorreu algum erro')
+    })
 
 let btn = document.getElementById('mudar-personagem')
 let indice = 0
@@ -22,7 +25,9 @@ btn.addEventListener('click', function()  {
         nome.innerHTML = data.results[indice].name
         foto.src = data.results[indice].image
         origem.innerText = data.results[indice].origin.name
-
+    })
+    .catch((err) => {
+        alert('não tem como avançar mais, este é o último personagem disponível')
     })
 })
 
@@ -34,5 +39,8 @@ btnBack.addEventListener('click', function() {
         nome.innerHTML = data.results[indice].name
         foto.src = data.results[indice].image
         origem.innerText = data.results[indice].origin.name
+    })
+    .catch((err) => {
+        alert('não tem como voltar, o Rick é o primeiro personagem')
     })
 })
