@@ -17,5 +17,5 @@ Ainda não possui responsividade.
 
 1. Clone este repositório:
 ```bash
-git clone [URL_DO_REPOSITORIO]
+git clone https://github.com/otaviogaldino/rick-and-morty
 2. Abra o arquivo index.html no seu navegador.
