@@ -15,7 +15,5 @@ possui responsividade.
 
 ## Como usar
 
-1. Clone este repositório:
-```bash
-git clone https://github.com/otaviogaldino/rick-and-morty
-2. Abra o arquivo index.html no seu navegador.
+acesse o link:
+  https://otaviogaldino.github.io/rick-and-morty
